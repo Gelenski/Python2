@@ -4,7 +4,7 @@ print("2 - Listar restaurante")
 print("3 - Ativar restaurante")
 print("4 - Sair")
 opcao_digitada = int(input("Selecione uma opção:\n"))
-print("Você escolheu a opção:", opcao_digitada)
+print("\nVocê escolheu a opção:", opcao_digitada)
 match opcao_digitada:
     case 1:
         print("Você escolheu cadastrar seu restaurante.")
