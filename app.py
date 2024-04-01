@@ -1,0 +1,6 @@
+print("Programa Expresso\m")
+print("1 - Cadastrar restaurante\m")
+print("2 - Listar restaurante\m")
+print("3 - Ativar restaurante\m")
+print("4 - Sair\m")
+opcao_digitada = input()
