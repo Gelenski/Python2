@@ -14,3 +14,5 @@ match opcao_digitada:
         print("Você escolheu ativar seu restaurante.")
     case 4:
         print("Você escolheu sair.")
+    case _:
+        print("Escolha uma opção valida.")
