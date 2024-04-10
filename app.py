@@ -3,7 +3,7 @@ import os
 
 def sair():
     os.system("cls")
-    print("Finalizando aplicação.")
+    print("Finalizando aplicação.\n")
 
 
 def chama_nome_app():
@@ -14,7 +14,7 @@ def lista_opcoes():
     print("1 - Cadastrar restaurante")
     print("2 - Listar restaurante")
     print("3 - Ativar restaurante")
-    print("4 - Sair")
+    print("4 - Sair\n")
 
 
 def escolha_opcoes():
@@ -30,7 +30,7 @@ def escolha_opcoes():
         case 4:
             sair()
         case _:
-            print("Escolha uma opção valida.")
+            print("Você escolheu uma opção inválida.")
 
 
 def main():
