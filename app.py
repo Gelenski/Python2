@@ -1,3 +1,11 @@
+import os
+
+
+def sair():
+    os.system("cls")
+    print("Finalizando aplicação.")
+
+
 print("Programa Expresso")
 print("1 - Cadastrar restaurante")
 print("2 - Listar restaurante")
