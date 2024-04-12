@@ -1,5 +1,10 @@
 import os
 
+# Váriaveis globais do projeto:
+
+
+restaurante = []
+
 
 def sair():
     os.system("cls")
@@ -8,7 +13,7 @@ def sair():
 
 def opcao_invalida():
     print("Opção Inválida\n")
-    input("Digite qualquer tecla para retornar ao menu: ")
+    input("Digite qualquer tecla para retornar ao menu principal: ")
     main()
 
 
@@ -22,6 +27,18 @@ def exibir_opcoes():
     print("3 - Ativar restaurante")
     print("4 - Sair\n")
 
+# Funcionalidades das opções:
+
+
+def cadatrar_novo_restaurante():
+    os.system("cls")
+    nome_do_restaurante = input("Digite o nome do seu novo restaurante: \n")
+    restaurante.append(nome_do_restaurante)
+    print(f"O restaurante: {nome_do_restaurante} foi cadastrado com sucesso!")
+    input("Digite qualquer tecla para retornar ao menu principal:")
+    main()
+# Escolha das opções:
+
 
 def escolha_opcoes():
     try:
@@ -30,6 +47,7 @@ def escolha_opcoes():
         match opcao_digitada:
             case 1:
                 print("Você escolheu cadastrar seu restaurante.")
+                cadatrar_novo_restaurante()
             case 2:
                 print("Você escolheu listar seu restaurante.")
             case 3:
