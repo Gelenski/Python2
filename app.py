@@ -30,7 +30,7 @@ def exibir_opcoes():
 # Funcionalidades das opções:
 
 
-def cadatrar_novo_restaurante():
+def cadastrar_novo_restaurante():
     os.system("cls")
     nome_do_restaurante = input("Digite o nome do seu novo restaurante: \n")
     restaurante.append(nome_do_restaurante)
@@ -47,7 +47,7 @@ def escolha_opcoes():
         match opcao_digitada:
             case 1:
                 print("Você escolheu cadastrar seu restaurante.")
-                cadatrar_novo_restaurante()
+                cadastrar_novo_restaurante()
             case 2:
                 print("Você escolheu listar seu restaurante.")
             case 3:
