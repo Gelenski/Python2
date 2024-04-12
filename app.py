@@ -1,6 +1,6 @@
 import os
 
-# Váriaveis globais do projeto:
+# Variáveis globais do projeto:
 
 
 restaurante = []
