@@ -6,11 +6,17 @@ def sair():
     print("Finalizando aplicação.\n")
 
 
+def opcao_invalida():
+    print("Opção Inválida\n")
+    input("Digite qualquer tecla para retornar ao menu: ")
+    main()
+
+
 def chama_nome_app():
     print("Programa Expresso")
 
 
-def lista_opcoes():
+def exibir_opcoes():
     print("1 - Cadastrar restaurante")
     print("2 - Listar restaurante")
     print("3 - Ativar restaurante")
@@ -18,24 +24,28 @@ def lista_opcoes():
 
 
 def escolha_opcoes():
-    opcao_digitada = int(input("Selecione uma opção:\n"))
-    print("\nVocê escolheu a opção:", opcao_digitada)
-    match opcao_digitada:
-        case 1:
-            print("Você escolheu cadastrar seu restaurante.")
-        case 2:
-            print("Você escolheu listar seu restaurante.")
-        case 3:
-            print("Você escolheu ativar seu restaurante.")
-        case 4:
-            sair()
-        case _:
-            print("Você escolheu uma opção inválida.")
+    try:
+        opcao_digitada = int(input("Selecione uma opção:\n"))
+        print("\nVocê escolheu a opção:", opcao_digitada)
+        match opcao_digitada:
+            case 1:
+                print("Você escolheu cadastrar seu restaurante.")
+            case 2:
+                print("Você escolheu listar seu restaurante.")
+            case 3:
+                print("Você escolheu ativar seu restaurante.")
+            case 4:
+                sair()
+            case _:
+                opcao_invalida()
+    except:
+        opcao_invalida()
 
 
 def main():
+    os.system("cls")
     chama_nome_app()
-    lista_opcoes()
+    exibir_opcoes()
     escolha_opcoes()
 
 
